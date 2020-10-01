@@ -13,6 +13,10 @@ app.use(cors({
 }))
 
 //create student and mentor........................js
+app.get('/',function(req,res){
+    res.write("<h1>Hello I am vishnu! Sample Node js App</h1>")
+    res.end()
+})
 
 app.post("/insert", async function (req, res) {
  try{
